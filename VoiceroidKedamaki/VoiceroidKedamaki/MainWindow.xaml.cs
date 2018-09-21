@@ -148,7 +148,7 @@ namespace VoiceroidKedamaki
                 player.Play();
 
                 // 顔
-                Task.Run(() => RevertAsync(operationID, 1));
+                Task.Run(() => RevertAsync(operationID, player.Stream.Length / 2 / 44100 + 0.5));
             }
             catch(Exception ex)
             {
