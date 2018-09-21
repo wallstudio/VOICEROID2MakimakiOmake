@@ -1,0 +1,21 @@
+﻿<Window x:Class="VoiceroidKedamaki.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VoiceroidKedamaki"
+        mc:Ignorable="d"
+        Title="VOICEROID2 マキマキ" Height="450" Width="800" BorderBrush="Black" BorderThickness="0" MinHeight="460" MinWidth="740">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="505*"/>
+            <ColumnDefinition Width="287*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Margin="10,10,268,56" TextWrapping="Wrap" Text="" Name="textbox" FontSize="30" Grid.ColumnSpan="2"/>
+        <Border BorderThickness="1" BorderBrush="Black" Margin="0,10,10,0" HorizontalAlignment="Right" Width="253" Height="353" VerticalAlignment="Top" Grid.Column="1">
+            <Image Margin="0" Source="asset/maki.png" Stretch="UniformToFill" StretchDirection="DownOnly" Name="image"/>
+        </Border>
+        <Button Content="再生" Margin="10,0,0,10" FontSize="20" Click="Button_Click" Height="41" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="88"/>
+        <Button Content="停止" HorizontalAlignment="Left" Width="88" Margin="103,0,0,10" FontSize="20" Click="Button_Click_1" Height="41" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
